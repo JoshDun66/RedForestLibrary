@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Forest Library</title>
+    <style>
+        /* Default Light Mode */
+        body {
+            font-family: Arial, sans-serif;
+            background: url('books-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #ff4d4d;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .book {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        /* Book colors (unchanged) */
+        .green { background-color: #228B22; color: white; }
+        .brown { background-color: #8B4513; color: white; }
+        .red { background-color: #B22222; color: white; }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Dark Mode Styles */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: black;
+                color: white;
+            }
+            .container {
+                background: #444; /* Dark grey box */
+                color: white;
+            }
+            .footer {
+                color: #ffcc00;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Red Forest Library</h1>
+    <p>As you all know, we are using this new QR code system to leave information and automatically make changes inside our library systems.</p>
+
+    <p><strong>Please go and check these books and their conditions:</strong></p>
+    
+    <div class="book green">How to be cunty</div>
+    <div class="book brown">Pun Raider</div>
+    <div class="book red">History of Natla Technologies</div>
+
+    <p>Other books don’t need to be checked. Thank you and don't forget to write those conditions into the system.</p>
+
+    <p class="footer">— Red Forest Library Team</p>
+</div>
+
+</body>
+</html>
